@@ -1,0 +1,52 @@
+.breadcrumb {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #6c757d;
+    border-radius: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.info-container {
+    padding: 20px;
+    max-width: 600px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p.lead {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.btn-primary {
+    font-size: 1.2em;
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #007bff;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.info-container h2 {
+    color: #000000; /* Cambia el color del nombre del juego a negro */
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}

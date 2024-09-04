@@ -1,0 +1,15 @@
+.bg-custom {
+    background-color: #FEFAE0;
+    height: 100vh; /* Asegura que el contenedor principal ocupe toda la altura de la ventana */
+}
+
+.form-container {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.btn-custom {
+    margin-inline: 0.5rem;
+}

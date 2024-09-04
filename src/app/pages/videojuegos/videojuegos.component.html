@@ -1,0 +1,28 @@
+<div style="background-color: #FEFAE0;">
+    <br>
+<div class="container" style="background-color: #FEFAE0;">
+    <h1 style="font-size: 75px; margin: 10px; text-align: center;">Compra Tus Videojuegos Favoritos</h1>
+</div>
+<br>
+  <!-- Tarjetas para Videojuegos -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4 col-lg-3 mb-4" *ngFor="let videojuego of videojuegos">
+        <div class="card shadow-sm" style="width: 100%; height: 100%;">
+          <img [src]="videojuego.imagen" class="card-img-top" alt="Videojuego 1" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">{{videojuego.nombre}}</h5>
+            <p class="card-text">{{videojuego.descripcion}}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary" (click)="onClickVideojuego(videojuego)">Ver más</button>
+              </div>
+              <small class="text-muted">Precio: ${{videojuego.precio}}</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>

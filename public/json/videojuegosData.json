@@ -1,0 +1,10 @@
+
+[{"id": 1, "nombre": "Pokemon Esmeralda", "precio": 25.25, "categoria": "Aventura", "descripcion": "Videojuego de Aventura", "imagen": "image/esmeralda.jpg"},
+{"id": 2, "nombre": "Mario Party", "precio": 50.23,"categoria": "Juego de Mesa", "descripcion": "Videojuego de Juego de Mesa", "imagen": "image/party.webp"},
+{"id": 3, "nombre": "EA FC25", "precio": 50.50,"categoria": "Deportes", "descripcion": "Videojuego de Futbol", "imagen": "image/fc.avif"},
+{"id": 4, "nombre": "Hollow Knight", "precio": 15.50,"categoria": "Aventura", "descripcion": "Videojuego de Aventura", "imagen": "image/hollow.jpg"},
+{"id": 5, "nombre": "Mario Kart", "precio": 20.40,"categoria": "Carreras", "descripcion": "Videojuego de Carreras", "imagen": "image/kart.avif"},
+{"id": 6, "nombre": "AEW Fight Forever", "precio": 40.50,"categoria": "Peleas", "descripcion": "Videojuego de Wrestling", "imagen": "image/aew.avif"},
+{"id": 7, "nombre": "WWE 2K24", "precio": 20.50,"categoria": "Peleas", "descripcion": "Videojuego de Wrestling", "imagen": "image/2k24.avif"},
+{"id": 8, "nombre": "Mortal Kombat Armageddon", "precio": 30.50,"categoria": "Peleas", "descripcion": "Videojuego de Peleas", "imagen": "image/armag.jpg"}
+]

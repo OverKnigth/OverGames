@@ -1,0 +1,41 @@
+<div class="container-fluid d-flex flex-column justify-content-center align-items-center min-vh-100 bg-custom">
+    <div class="col-md-6 col-lg-4 mb-4">
+        <form [formGroup]="form">
+            <h2 class="text-center mb-4">Registro e Inicio de Sesión</h2>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo</label>
+                <input type="email" 
+                       class="form-control" 
+                       id="email" 
+                       formControlName="email"
+                       placeholder="Introduce tu correo">
+                <div class="invalid-feedback">
+                    El correo es obligatorio
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" 
+                       class="form-control" 
+                       id="password" 
+                       formControlName="password"
+                       placeholder="Introduce tu contraseña">
+                <div class="invalid-feedback">
+                    La contraseña es obligatoria
+                </div>
+            </div>        
+            <div class="d-flex justify-content-center gap-2 mb-4">
+                <button class="btn btn-secondary" 
+                type="button" 
+                (click)="onClickLogin()">
+            Iniciar Sesión
+        </button>
+                <button class="btn btn-danger" 
+                        type="button" 
+                        (click)="onClickLoginWithGoogle()">
+                    Iniciar Sesión con Google
+                </button>            
+            </div>
+        </form>
+    </div>
+</div>

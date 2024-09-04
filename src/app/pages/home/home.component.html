@@ -1,0 +1,54 @@
+<div class="container-fluid text-center" style="background-color: #FEFAE0;">
+  <br>
+  <div class="container" style="background-color: #FEFAE0;">
+    <h1 style="font-size: 75px; margin: 10px;">Bienvenido a OverGames Store</h1>
+  </div>
+  <br>
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" style="width: 100%;" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/videojuegosO2.jpg" class="d-block w-100" alt="videojuegos1" style="width: 100%; height: 700px;">
+      </div>
+      <div class="carousel-item">
+        <img src="image/videojuegosO1.jpg" class="d-block w-100" alt="videojuegos1" style="width: 100%; height: 700px;">
+      </div>
+      <div class="carousel-item">
+        <img src="image/of2.webp" class="d-block w-100" alt="videojuegos1" style="width: 100%; height: 700px;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <br><br>
+  <h1 style="font-size: 60px;">Videojuegos Destacados</h1>
+  <br><br>
+
+  <!-- Tarjetas para Videojuegos -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4 col-lg-3 mb-4" *ngFor="let videojuego of videojuegos | slice:0:3">
+        <div class="card shadow-sm" style="width: 100%; height: 100%;">
+          <img [src]="videojuego.imagen" class="card-img-top" alt="{{videojuego.nombre}}" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">{{videojuego.nombre}}</h5>
+            <p class="card-text">{{videojuego.descripcion}}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary" (click)="onClickVideojuego(videojuego)">Ver más</button>
+              </div>
+              <small class="text-muted">Precio: ${{videojuego.precio}}</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
